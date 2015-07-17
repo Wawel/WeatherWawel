@@ -1,0 +1,366 @@
+body {
+	background-image:url(../images/dosh4.jpg);    /* Местоположение фоновой картинки */       
+	background-position: center center;      /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */   
+	background-repeat: no-repeat;      /* Фон не повторяется */   
+	background-attachment: fixed;   /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+	background-size: cover;      /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/   
+	background-color: #464646; /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/   
+	margin:0;
+}
+#other{
+	top:0;
+	float:right;
+}
+#sp{
+	border: 1px solid #CCC;
+    overflow: hidden; 
+    height: 34px;
+    background: url(../images/arrow.jpg) no-repeat right #DDD;
+    width: 240px;
+	float:left;
+}
+#sp select{
+	float:left;
+	border-radius: 0;
+    background: transparent;
+    height: 34px;
+    padding: 5px;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-appearance: none;
+    width: 268px;
+}
+#list{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width: 1000px;
+	text-align: justify;
+}
+
+.db1{
+	display:inline-block;
+	background:white;
+	width: 13.8%;
+	height: 80px;
+	cursor: pointer;
+	margin-left: 1px;
+	text-align:center;
+}
+.db1:hover{
+	background:#748678;
+}
+.db1:active{
+	background:#748697;
+}
+#pon{
+	margin-left: 0;
+}
+#nd{
+
+}
+#time_p{
+	width:100%;
+	background:#748697;
+	display:inline-block;
+}
+#digital_watch{
+	margin:0 0 10px 10px;
+	color:blue;
+}
+#db{	
+	width:100%;
+
+}
+#table{
+	width:100%;
+	margin:0;
+	height:200px;	
+	border-collapse: collapse;
+}
+#cen-pog{
+	width:1000px;
+	margin:0 auto;
+	background:#748697;
+	box-shadow: 1px 1px 10px white;
+}	
+.icon{
+	display:block;
+	width: 50px;
+	height: 50px;
+	float: left;
+	background: url(../images/48.48.png) no-repeat;
+	top:0;
+	margin-left:20px;
+}
+.icon2{
+	margin-left:50px;
+	margin-top:12px;
+	display:block;
+	height:50px;
+	font-size:20px;
+}
+.icon3{
+	display:inline;	
+}
+.hours-icon{
+	background: url(../images/1.png) no-repeat;
+	background-position: 32px 18px; 
+	border-right: 1px solid black;	
+	border-left: 1px solid black;
+}	
+.content{
+	text-align:center;
+}
+.hours{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	font-size:20px;
+	letter-spacing: 0;
+	line-height: 20px;
+	vertical-align: top;
+}
+.hours-temp{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	text-align:center;
+	letter-spacing: 0;
+}
+.hour{
+	line-height: 0.769em;
+	vertical-align: top;
+	letter-spacing: 0;
+}
+.min{
+
+	font-size: 0.769em;
+    line-height: 0.769em;
+	vertical-align: top;
+  	letter-spacing: 0;
+
+}
+
+/*#pon_icon{
+	background-position: -6px -4px; 
+}
+#viv_icon{
+	background-position: -54px -4px; 
+}
+#ser_icon{
+	background-position: -6px -52px; 
+}
+#ch_icon{
+	background-position: -6px -4px; 
+}
+#pn_icon{
+	background-position: -6px -4px; 
+}
+#sb_icon{
+	background-position: -6px -4px; 
+}*/
+
+#nd_icon{
+	background-position: -6px -4px; 
+	cursor: pointer;
+}
+
+#ramvid{
+	display:block;
+	width:100%;
+	margin-top:15%;
+}
+#fon{
+	position: fixed; 
+	z-index: -10; 
+	left:0; 
+	top:0; 
+	background-color: #000; 
+	opacity: 0.5; 
+	width: 100%; 
+	height: 100%; 
+}
+#fon a{
+		display:block;
+		height:100%;
+		cursor: default;
+}
+#set{
+	border-radius:15px;
+	background: rgba(0, 170, 238, 0.6);
+}
+
+.push{
+	display:inline;
+}
+.kn{
+	border-radius:5px;
+	background-color:red;
+	opacity:.7;
+	width:80px;
+	height:30px;
+	color:white;
+
+}
+.kn:hover{
+	background:purple;
+	cursor: pointer;
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+}
+#fx{
+	float:right;
+	background-image:url(../images/delete.png);
+	width:30px;
+	height:30px;
+	background-repeat: no-repeat;
+}
+#fx:hover{
+	animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+#leftstart{
+	float:left;
+	width:150px;
+	height:50px;
+	margin-left:150px;
+	background:url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjmxsMExLFR7ijKmioQksVL-9nCFvxTtuCUEwffOVrKY1V4Nv9);
+}
+#leftstart a{
+	display:block;
+	height:100%;
+}
+#vubir{
+	max-width: none;
+	display: table;
+	background-color:#46ad68;
+	margin:10% auto 0 auto;
+}
+#map11{
+position:relative;
+	background-color:#468724;
+	margin: 200px 0 100px;
+	height: auto;
+	padding: 0;
+	width: 100%;
+	display: block;
+}
+#map12{
+	max-width: none;
+	display: table;
+	background-color:#red;
+	margin:20% auto 0 auto;
+}
+#map13{
+	display:block;
+	background-color:#458697;
+	color:#792898;
+	text-align:center;
+	font-size:30px;
+	padding-top:0;
+	margin-top:0;
+}
+h3{
+	margin:0;
+}
+#earch{
+	background-image:url(../images/globe.svg);
+	height: 475px;
+	width: 475px;
+	background-size: 475px;
+	display: inline-block;
+}
+#namest{
+	display:table-cell;
+	vertical-align: middle;
+	width: 60%;
+	background-color:#467868;
+	}
+#tittlename{
+	font-size:36px;
+	color:#f0f;
+	font-weight:500px;
+	text-align:center;
+}
+#menu{
+
+	background-image:url(../images/down.png);
+	height: 128px;
+	width: 128px;
+	background-size: 128px;
+	margin-left:300px;
+}
+#menu a{
+	display:block;
+	height:100%;
+}
+#seccen{
+	position:relative;
+	background-color:#468724;
+	margin: 200px 0;
+	height: auto;
+	padding: 0;
+	width: 100%;
+	display: block;
+	}
+.b-container:hover{
+	background-color:#0a5;
+}
+.b-container a{
+	display:block;
+	text-decoration:none;
+}
+#topmap{
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
+	height:50px;
+	box-shadow: 0 3px 5px #545678;
+	background-color:#456825;
+	z-index:+1;
+}
+area{
+	outline-style: none; /*Забрали рамку при наведені на карту*/
+}
+#set{
+	max-width:400px;
+}
+.b-container{
+    float:right;
+	width:200px;
+	height:50px;
+	background-color:#f01;
+	text-align:center;
+	display:inline-block;
+	border-radius:100px;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 15px;
+	margin-right:150px;
+}
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:100px;
+    height: 40px;
+    padding:10px;
+}

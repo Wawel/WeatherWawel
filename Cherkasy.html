@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Прогноз погоди v1.1</title>
+<link rel="stylesheet" type="text/css" href="1.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+</script>
+<script>
+var d;
+function RefreshTime()
+{
+    d = new Date();
+    document.getElementById('clock').innerHTML=d.toLocaleString();
+}
+</script>
+</head>
+<body onload="setInterval('RefreshTime()',1000);">
+	<header id="topmap">
+		<div id="leftstart">
+			<a href="startmap.html" class="ss"></a>
+		</div>
+		<div class="overlay">
+		<div class="b-container">
+    <a href="javascript:PopUpShow()">Напишіть нам</a>
+</div>
+<div class="b-popup" id="popup1">
+    <div class="b-popup-content">
+			<form method="post" action="#">
+	<fieldset id="set">
+		<input type="text" name="name" required placeholder="Ваше ім'я">
+		<input type="email" name="email" required placeholder="Ваше електронна почта">
+		<p><textarea cols="70" rows="10" required placeholder="Ваш текст..."></textarea></p>
+		<p><input type="submit" value="Відправити"></p>
+	</fieldset>
+</form> 
+		<a href="javascript:PopUpHide()">Сховати</a>
+    </div>
+</div>
+		</div>
+	</header>
+	<section>
+		<article class="middle">
+			<select name="Оберіть місто" size="1">
+			<option value="none" selected disabled>Місто...</option>
+			<option value="Vinnytsia">Вінниця</option>
+			<option value="Lutsk">Луцьк</option>
+			<option value="Dnipropetrovsk">Дніпропетровськ</option>
+			<option value="Donetsk">Донецьк</option>
+			<option value="Zhytomyr">Житомир</option>
+			<option value="Uzhhorod">Ужгород</option>
+			<option value="Zaporizhia">Запоріжжя</option>
+			<option value="Ivano-Frankivsk">Івано-Франківськ</option>
+			<option value="Kiev">Київ</option>
+			<option value="Kirovohrad">Кіровоград</option>
+			<option value="Simferopol">Сімферополь</option>
+			<option value="Luhansk">Луганськ</option>
+			<option value="Lviv">Львів</option>
+			<option value="Mykolaiv">Миколаїв</option>
+			<option value="Odessa">Одеса</option>
+			<option value="Poltava">Полтава</option>
+			<option value="Rivne">Рівне</option>
+			<option value="Sumy">Суми</option>
+			<option value="Ternopil">Тернопіль</option>
+			<option value="Kharkiv">Харків</option>
+			<option value="Kherson">Херсон</option>
+			<option value="Khmelnytskyi">Хмельницький</option>
+			<option value="Cherkasy">Черкаси</option>
+			<option value="Chernivtsi">Чернівці</option>
+			<option value="Chernihiv">Чернігів</option>
+			</select>
+		</article>
+		<article class="middle">
+			Віджет Черкаси
+			<div id="spec_block">
+				<ul>
+					<li class="day">
+						<a>
+							<div>
+								<h3>
+									<span>Понеділок</span>
+								</h3>
+							</div>
+							<span>Значок погоди
+								<img>
+							</span>
+							<span>Температура
+								<span>число</span>
+								<span>°C</span>
+							</span>
+						</a>
+					</li>
+					<li class="day">
+						<a>
+							<div>
+								<h3>
+									<span>Вівторок</span>
+								</h3>
+							</div>
+							<span>Значок погоди
+								<img>
+							</span>
+							<span>Температура
+								<span>число</span>
+								<span>°C</span>
+							</span>
+						</a>
+					</li>
+					<li class="day">
+						<a>
+							<div>
+								<h3>
+									<span>Середа</span>
+								</h3>
+							</div>
+							<span>Значок погоди
+								<img>
+							</span>
+							<span>Температура
+								<span>число</span>
+								<span>°C</span>
+							</span>
+						</a>
+					</li class="day">
+					<li>
+						<a>
+							<div>
+								<h3>
+									<span>Четвер</span>
+								</h3>
+							</div>
+							<span>Значок погоди
+								<img>
+							</span>
+							<span>Температура
+								<span>число</span>
+								<span>°C</span>
+							</span>
+						</a>
+					</li>
+					<li class="day">
+						<a>
+							<div>
+								<h3>
+									<span>Пятниця</span>
+								</h3>
+							</div>
+							<span>Значок погоди
+								<img>
+							</span>
+							<span>Температура
+								<span>число</span>
+								<span>°C</span>
+							</span>
+						</a>
+					</li>
+					<li class="day">
+						<a>
+							<div>
+								<h3>
+									<span>Субота</span>
+								</h3>
+							</div>
+							<span>Значок погоди
+								<img>
+							</span>
+							<span>Температура
+								<span>число</span>
+								<span>°C</span>
+							</span>
+						</a>
+					</li>
+					<li class="day">
+						<a>
+							<div>
+								<h3>
+									<span>Неділя</span>
+								</h3>
+							</div>
+							<span>Значок погоди
+								<img>
+							</span>
+							<span>Температура
+								<span>число</span>
+								<span>°C</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<script>	
+				document.getElementById ('spec_block').getElementsByTagName ('DIV') [new Date ().getDay ()]. style.display = 'block';
+			</script>
+			
+			<div></div>
+			
+			
+			
+			
+		</article>
+		<article class="middle">
+			<h1>Інші міста</h1>
+			<table>
+				<tr>
+					<td>Київ</td>
+					<td>-15</td>
+				</tr>
+				<tr>
+					<td>Харків</td>
+					<td>-10</td>
+				</tr>
+				<tr>
+					<td>Дніпропетровськ</td>
+					<td>-5</td>
+				</tr>
+				<tr>
+					<td>Одеса</td>
+					<td>-12</td>
+				</tr>
+				<tr>
+					<td>Донецьк</td>
+					<td>-15</td>
+				</tr>
+				<tr>
+					<td>Львів</td>
+					<td>-11</td>
+				</tr>
+			</table>
+		</article>
+	</section>
+	<footer>
+		<article>
+			Facebook
+		</article>
+		<article>
+			Twiter
+		</article>
+		<article>
+			<a href="form.html">Напишіть нам</a>
+			<li class="bbc-st-facebook-cta"><a href="#" title="Share this page on Facebook">Facebook</a></li>
+		</article>
+	</footer>
+</body>
+
+</html>
