@@ -1,9 +1,9 @@
 body {
-	background-image:url(../images/dosh4.jpg);    /* Местоположение фоновой картинки */       
-	background-position: center center;      /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */   
-	background-repeat: no-repeat;      /* Фон не повторяется */   
+	background-image:url(../images/blue.jpg);    /* Местоположение фоновой картинки */       
+	/*background-position: center center;    */  /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */   
+	background-repeat: repeat-x repeat-y;      /* Фон не повторяется */   
 	background-attachment: fixed;   /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
-	background-size: cover;      /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/   
+/*	background-size: cover;    */  /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/   
 	background-color: #464646; /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/   
 	margin:0;
 }
@@ -12,12 +12,13 @@ body {
 	float:right;
 }
 #sp{
-	border: 1px solid #CCC;
+	border: 1px solid orange;
     overflow: hidden; 
     height: 34px;
-    background: url(../images/arrow.jpg) no-repeat right #DDD;
+    background: url(../images/arrow.jpg) no-repeat right orange;
     width: 240px;
 	float:left;
+	
 }
 #sp select{
 	float:left;
@@ -30,6 +31,7 @@ body {
     line-height: 1;
     -webkit-appearance: none;
     width: 268px;
+	font-family:"Comic Sans MS";
 }
 #list{
 	list-style-type:none;
@@ -41,7 +43,7 @@ body {
 
 .db1{
 	display:inline-block;
-	background:white;
+	background:#FF8C00;
 	width: 13.8%;
 	height: 80px;
 	cursor: pointer;
@@ -49,25 +51,33 @@ body {
 	text-align:center;
 }
 .db1:hover{
-	background:#748678;
+	background:#FF4500;
 }
 .db1:active{
-	background:#748697;
+	background:#FF0000;
 }
 #pon{
 	margin-left: 0;
 }
-#nd{
-
+#watch{
+	float: left;
+	display:inline-block;
+	height:30px;
+	width:30px;
+	background-color:red;
+	background:url(http://www2.psd100.com/ppp/2013/11/0501/Watch-icon-1105224114.png);
 }
 #time_p{
 	width:100%;
-	background:#748697;
+	background:#FFA500;
 	display:inline-block;
 }
 #digital_watch{
+	font-size:20px;
 	margin:0 0 10px 10px;
-	color:blue;
+	color:black;
+	padding-top:5px;
+	padding-left:25px;
 }
 #db{	
 	width:100%;
@@ -82,7 +92,7 @@ body {
 #cen-pog{
 	width:1000px;
 	margin:0 auto;
-	background:#748697;
+	background:#FFA500;
 	box-shadow: 1px 1px 10px white;
 }	
 .icon{
@@ -194,6 +204,7 @@ body {
 	display:inline;
 }
 .kn{
+	text-align:center;
 	border-radius:5px;
 	background-color:red;
 	opacity:.7;
@@ -203,11 +214,14 @@ body {
 
 }
 .kn:hover{
-	background:purple;
+	background:#FF4500;
 	cursor: pointer;
 	-webkit-transform: rotate(360deg);
 	-moz-transform: rotate(360deg);
 	-o-transform: rotate(360deg);
+}
+.kn:active{
+	background:#FF8C00;
 }
 #fx{
 	float:right;
@@ -218,7 +232,7 @@ body {
 }
 #fx:hover{
 	animation-name: spin;
-    animation-duration: 1000ms;
+    animation-duration: 1500ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -233,9 +247,10 @@ body {
 #leftstart{
 	float:left;
 	width:150px;
-	height:50px;
+	height:75px;
 	margin-left:150px;
-	background:url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjmxsMExLFR7ijKmioQksVL-9nCFvxTtuCUEwffOVrKY1V4Nv9);
+	background:url(../images/weather-icon.png) no-repeat center;
+	background-size: cover;
 }
 #leftstart a{
 	display:block;
@@ -248,8 +263,7 @@ body {
 	margin:10% auto 0 auto;
 }
 #map11{
-position:relative;
-	background-color:#468724;
+	position:relative;
 	margin: 200px 0 100px;
 	height: auto;
 	padding: 0;
@@ -259,23 +273,28 @@ position:relative;
 #map12{
 	max-width: none;
 	display: table;
-	background-color:#red;
-	margin:20% auto 0 auto;
+	margin:25% auto 0 auto;
 }
 #map13{
 	display:block;
-	background-color:#458697;
-	color:#792898;
+	color: #FF6347;
 	text-align:center;
 	font-size:30px;
 	padding-top:0;
 	margin-top:0;
+	font-family:"Comic Sans MS";
+}
+#map14{
+	margin-top:400px;
+	margin-bottom:-400px;
+	display:block;
+	height:10px;
 }
 h3{
 	margin:0;
 }
 #earch{
-	background-image:url(../images/globe.svg);
+	background-image:url(https://d7mj4aqfscim2.cloudfront.net/images/splash-2014/globe1.svg);
 	height: 475px;
 	width: 475px;
 	background-size: 475px;
@@ -285,13 +304,14 @@ h3{
 	display:table-cell;
 	vertical-align: middle;
 	width: 60%;
-	background-color:#467868;
+
 	}
 #tittlename{
 	font-size:36px;
 	color:#f0f;
 	font-weight:500px;
 	text-align:center;
+	font-family:"Comic Sans MS";
 }
 #menu{
 
@@ -307,28 +327,20 @@ h3{
 }
 #seccen{
 	position:relative;
-	background-color:#468724;
 	margin: 200px 0;
 	height: auto;
 	padding: 0;
 	width: 100%;
 	display: block;
 	}
-.b-container:hover{
-	background-color:#0a5;
-}
-.b-container a{
-	display:block;
-	text-decoration:none;
-}
 #topmap{
 	position:fixed;
 	width:100%;
 	top:0;
 	left:0;
-	height:50px;
+	height:75px;
 	box-shadow: 0 3px 5px #545678;
-	background-color:#456825;
+	background-color:#FFA500;
 	z-index:+1;
 }
 area{
@@ -337,18 +349,31 @@ area{
 #set{
 	max-width:400px;
 }
-.b-container{
-    float:right;
-	width:200px;
-	height:50px;
-	background-color:#f01;
-	text-align:center;
-	display:inline-block;
-	border-radius:100px;
-    line-height: 50px;
-    font-weight: 700;
-    font-size: 15px;
+a#buttop{
+	font-family:"Comic Sans MS";
+	float:right;
 	margin-right:150px;
+	height:55px;
+	vertical-align:middle;
+	display:inline-block;
+	text-align:center;
+	line-height: 40px;
+	font-size: 20px;
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+	padding: .8em 1em 3px;
+	border-radius: 3px;
+	background: #87CEEB;
+	transition: 0.2s;
+	width:150px;
+	}
+a#buttop:hover{
+	background: #00BFFF;  
+}
+a#buttop:active{
+	background: #1E90FF;
+	box-shadow: 0 3px #4169E1 inset;
 }
 .b-popup{
     width:100%;
