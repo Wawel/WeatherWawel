@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
 <head>
@@ -385,4 +386,392 @@
 	</footer>
 </body>
 
+=======
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Прогноз погоди v1.1</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script type="text/javascript">
+  function digitalWatch() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    if (hours < 10) hours = "0" + hours;
+    if (minutes < 10) minutes = "0" + minutes;
+    document.getElementById("digital_watch").innerHTML = hours + ":" + minutes;
+    setTimeout("digitalWatch()", 1000);
+  }
+</script>
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+</script>
+</head>
+<body onload="digitalWatch()">
+		<header id="topmap">
+		<div id="leftstart">
+			<a href="index.html" class="ss"></a>
+		</div>
+		<div class="overlay">
+		<div class="b-container">
+    <a href="javascript:PopUpShow()">Напишіть нам</a>
+</div>
+<div class="b-popup" id="popup1">
+	<div class="b-popup-content">
+			<form method="post" action="#">
+	<fieldset id="set">
+		<div class="fx">
+			<a id="fx" href="javascript:PopUpHide()"></a>
+		</div>
+		<input type="text" name="name" required placeholder="Ваше ім'я">
+		<input type="email" name="email" required placeholder="Ваше електронна почта">
+		<p><textarea cols="70" rows="10" required placeholder="Ваш текст..."></textarea></p>
+		<p class="push">
+			<input type="submit" value="Відправити" class="kn">
+		</p>
+	</fieldset>
+	<div id="fon"><a href="javascript:PopUpHide()"></a>
+	</div>
+</form> 
+    </div>
+</div>
+		</div>
+	</header>
+		<div id="ramvid">		
+			<article class="middle" id="sp">
+				<select onchange="document.location=this.options[this.selectedIndex].value" name="Оберіть місто" size="1">
+					<option value="none" selected disabled>Місто...</option>
+					<option value="Vinnytsia.html">Вінниця</option>
+					<option value="Lutsk.html">Луцьк</option>
+					<option value="Dnipropetrovsk.html">Дніпропетровськ</option>
+					<option value="Donetsk.html">Донецьк</option>
+					<option value="Zhytomyr.html">Житомир</option>
+					<option value="Uzhhorod.html">Ужгород</option>
+					<option value="Zaporizhia.html">Запоріжжя</option>
+					<option value="Ivano-Frankivsk.html">Івано-Франківськ</option>
+					<option value="Kiev.html">Київ</option>
+					<option value="Kirovohrad.html">Кіровоград</option>
+					<option value="Simferopol.html">Сімферополь</option>
+					<option value="Luhansk.html">Луганськ</option>
+					<option value="Lviv.html">Львів</option>
+					<option value="Mykolaiv.html">Миколаїв</option>
+					<option value="Odessa.html">Одеса</option>
+					<option value="Poltava.html">Полтава</option>
+					<option value="Rivne.html">Рівне</option>
+					<option value="Sumy.html">Суми</option>
+					<option value="Ternopil.html">Тернопіль</option>
+					<option value="Kharkiv.html">Харків</option>
+					<option value="Kherson.html">Херсон</option>
+					<option value="Khmelnytskyi.html">Хмельницький</option>
+					<option value="Cherkasy.html">Черкаси</option>
+					<option value="Chernivtsi.html">Чернівці</option>
+					<option value="Chernihiv.html">Чернігів</option>
+					</select>
+			</article>
+			
+			<div id="cen-pog">
+				<div class="middle">
+					<div id="db">
+					<ul id="list">
+						<li class="db1" id="pon">
+							<a rel="nofollow">
+								<div >
+									<h3>
+										<span>Понеділок</span>
+									</h3>
+								</div>
+								<span id="pon_icon" class="icon">
+								</span>
+								<span class="icon2">
+									<span class="icon3">25</span>
+									<span class="icon3">°C</span>
+								</span>
+							</a>
+						</li>
+						<li class="db1">
+							<a>
+								<div>
+									<h3>
+										<span>Вівторок</span>
+									</h3>
+								</div>
+								<span id="viv_icon" class="icon">
+									<img>
+								</span>
+								<span class="icon2">
+									<span class="icon3">25</span>
+									<span class="icon3">°C</span>
+								</span>
+							</a>
+						</li>
+						<li class="db1">
+							<a>
+								<div>
+									<h3>
+										<span>Середа</span>
+									</h3>
+								</div>
+								<span id="ser_icon" class="icon">
+									<img>
+								</span>
+								<span class="icon2">
+									<span class="icon3">25</span>
+									<span class="icon3">°C</span>
+								</span>
+							</a>
+						</li>
+						<li class="db1">
+							<a>
+								<div>
+									<h3>
+										<span>Четвер</span>
+									</h3>
+								</div>
+								<span id="ch_icon" class="icon">
+									<img>
+								</span>
+								<span class="icon2">
+									<span class="icon3">25</span>
+									<span class="icon3">°C</span>
+								</span>
+							</a>
+						</li>
+						<li class="db1">
+							<a>
+								<div>
+									<h3>
+										<span>Пятниця</span>
+									</h3>
+								</div>
+								<span id="pn_icon" class="icon">
+									<img>
+								</span>
+								<span class="icon2">
+									<span class="icon3">25</span>
+									<span class="icon3">°C</span>
+								</span>
+							</a>
+						</li>
+						<li class="db1">
+							<a>
+								<div>
+									<h3>
+										<span>Субота</span>
+									</h3>
+								</div>
+								<span id="sb_icon" class="icon">
+									<img>
+								</span>
+								<span class="icon2">
+									<span class="icon3">25</span>
+									<span class="icon3">°C</span>
+								</span>
+							</a>
+						</li>
+						<li class="db1" id="nd">
+							<a>
+								<div>
+									<h3>
+										<span>Неділя</span>
+									</h3>
+								</div>
+								<span id="nd_icon" class="icon">
+									<img>
+								</span>
+								<span class="icon2">
+									<span class="icon3">25</span>
+									<span class="icon3">°C</span>
+								</span>
+							</a>
+						</li>
+					</ul>	
+				</div>
+			</div>	
+				
+				
+				<div id="pogoda">
+					
+					
+					<div id="time_p">
+						<p id="digital_watch" ></p>
+					</div>
+					
+					
+					
+					
+					<div id="wh_p">
+						<table id="table">
+							<thead>
+								<tr class="time">
+									<th class="hours">
+										<span class="hour">
+											02
+										</span>
+										<span class="min">
+											00
+										</span>
+									</th>
+									<th class="hours">
+										<span class="hour">
+											05
+										</span>
+										<span class="min">
+											00
+										</span>
+									</th>
+									<th class="hours">
+										<span class="hour">
+											08
+										</span>
+										<span class="min">
+											00
+										</span>
+									</th>
+									<th class="hours">
+										<span class="hour">
+											11
+										</span>
+										<span class="min">
+											00
+										</span>
+									</th>
+									<th class="hours">
+										<span class="hour">
+											14
+										</span>
+										<span class="min">
+											00
+										</span>
+									</th>
+									<th class="hours">
+										<span class="hour">
+											17
+										</span>
+										<span class="min">
+											00
+										</span>
+									</th>
+									<th class="hours">
+										<span class="hour">
+											20
+										</span>
+										<span class="min">
+											00
+										</span>
+									</th>
+									<th class="hours">
+										<span class="hour">
+											23
+										</span>
+										<span class="min">
+											00
+										</span>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="weather-type">
+									<td class="hours-icon" id="h1">
+										<span class="content" ></span>
+									</td>
+									<td class="hours-icon">
+										<span class="content"id="2h"></span>
+									</td>
+									<td class="hours-icon">
+										<span class="content"id="3h"></span>
+									</td>
+									<td class="hours-icon">
+										<span class="content"id="4h"></span>
+									</td>
+									<td class="hours-icon">
+										<span class="content"id="5h"></span>
+									</td>
+									<td class="hours-icon">
+										<span class="content"id="6h"></span>
+									</td>
+									<td class="hours-icon">
+										<span class="content"id="7h"></span>
+									</td>
+									<td class="hours-icon">
+										<span class="content"id="8h"></span>
+									</td>
+								</tr class="temperature">
+								<tr>
+									<td class="hours-temp">
+										<span class="icon4">
+											<span class="icon5">25</span>
+											<span class="icon5">°C</span>
+										</span>
+									</td>
+									<td class="hours-temp">
+										<span class="icon4">
+											<span class="icon5">25</span>
+											<span class="icon5">°C</span>
+										</span>
+									</td>
+									<td class="hours-temp">
+										<span class="icon4">
+											<span class="icon5">25</span>
+											<span class="icon5">°C</span>
+										</span>
+									</td>
+									<td class="hours-temp">
+										<span class="icon4">
+											<span class="icon5">25</span>
+											<span class="icon5">°C</span>
+										</span>
+									</td>
+									<td class="hours-temp">
+										<span class="icon4">
+											<span class="icon5">25</span>
+											<span class="icon5">°C</span>
+										</span>
+									</td>
+									<td class="hours-temp">
+										<span class="icon4">
+											<span class="icon5">25</span>
+											<span class="icon5">°C</span>
+										</span>
+									</td>
+									<td class="hours-temp">
+										<span class="icon4">
+											<span class="icon5">25</span>
+											<span class="icon5">°C</span>
+										</span>
+									</td>
+									<td class="hours-temp">
+										<span class="icon4">
+											<span class="icon5">25</span>
+											<span class="icon5">°C</span>
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	<footer>
+		
+	</footer>
+</body>
+
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 </html>

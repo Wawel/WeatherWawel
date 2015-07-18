@@ -1,9 +1,17 @@
 body {
+<<<<<<< HEAD
 	background-image:url(../images/blue.jpg);    /* Местоположение фоновой картинки */       
 	/*background-position: center center;    */  /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */   
 	background-repeat: repeat-x repeat-y;      /* Фон не повторяется */   
 	background-attachment: fixed;   /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
 /*	background-size: cover;    */  /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/   
+=======
+	background-image:url(../images/dosh4.jpg);    /* Местоположение фоновой картинки */       
+	background-position: center center;      /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */   
+	background-repeat: no-repeat;      /* Фон не повторяется */   
+	background-attachment: fixed;   /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+	background-size: cover;      /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/   
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 	background-color: #464646; /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/   
 	margin:0;
 }
@@ -12,6 +20,7 @@ body {
 	float:right;
 }
 #sp{
+<<<<<<< HEAD
 	border: 1px solid orange;
     overflow: hidden; 
     height: 34px;
@@ -19,6 +28,14 @@ body {
     width: 240px;
 	float:left;
 	
+=======
+	border: 1px solid #CCC;
+    overflow: hidden; 
+    height: 34px;
+    background: url(../images/arrow.jpg) no-repeat right #DDD;
+    width: 240px;
+	float:left;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 }
 #sp select{
 	float:left;
@@ -31,7 +48,10 @@ body {
     line-height: 1;
     -webkit-appearance: none;
     width: 268px;
+<<<<<<< HEAD
 	font-family:"Comic Sans MS";
+=======
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 }
 #list{
 	list-style-type:none;
@@ -43,7 +63,11 @@ body {
 
 .db1{
 	display:inline-block;
+<<<<<<< HEAD
 	background:#FF8C00;
+=======
+	background:white;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 	width: 13.8%;
 	height: 80px;
 	cursor: pointer;
@@ -51,14 +75,22 @@ body {
 	text-align:center;
 }
 .db1:hover{
+<<<<<<< HEAD
 	background:#FF4500;
 }
 .db1:active{
 	background:#FF0000;
+=======
+	background:#748678;
+}
+.db1:active{
+	background:#748697;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 }
 #pon{
 	margin-left: 0;
 }
+<<<<<<< HEAD
 #watch{
 	float: left;
 	display:inline-block;
@@ -78,6 +110,19 @@ body {
 	color:black;
 	padding-top:5px;
 	padding-left:25px;
+=======
+#nd{
+
+}
+#time_p{
+	width:100%;
+	background:#748697;
+	display:inline-block;
+}
+#digital_watch{
+	margin:0 0 10px 10px;
+	color:blue;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 }
 #db{	
 	width:100%;
@@ -92,7 +137,11 @@ body {
 #cen-pog{
 	width:1000px;
 	margin:0 auto;
+<<<<<<< HEAD
 	background:#FFA500;
+=======
+	background:#748697;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 	box-shadow: 1px 1px 10px white;
 }	
 .icon{
@@ -204,7 +253,10 @@ body {
 	display:inline;
 }
 .kn{
+<<<<<<< HEAD
 	text-align:center;
+=======
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 	border-radius:5px;
 	background-color:red;
 	opacity:.7;
@@ -214,15 +266,22 @@ body {
 
 }
 .kn:hover{
+<<<<<<< HEAD
 	background:#FF4500;
+=======
+	background:purple;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 	cursor: pointer;
 	-webkit-transform: rotate(360deg);
 	-moz-transform: rotate(360deg);
 	-o-transform: rotate(360deg);
 }
+<<<<<<< HEAD
 .kn:active{
 	background:#FF8C00;
 }
+=======
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 #fx{
 	float:right;
 	background-image:url(../images/delete.png);
@@ -232,7 +291,11 @@ body {
 }
 #fx:hover{
 	animation-name: spin;
+<<<<<<< HEAD
     animation-duration: 1500ms;
+=======
+    animation-duration: 1000ms;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -247,10 +310,16 @@ body {
 #leftstart{
 	float:left;
 	width:150px;
+<<<<<<< HEAD
 	height:75px;
 	margin-left:150px;
 	background:url(../images/weather-icon.png) no-repeat center;
 	background-size: cover;
+=======
+	height:50px;
+	margin-left:150px;
+	background:url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjmxsMExLFR7ijKmioQksVL-9nCFvxTtuCUEwffOVrKY1V4Nv9);
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 }
 #leftstart a{
 	display:block;
@@ -263,7 +332,12 @@ body {
 	margin:10% auto 0 auto;
 }
 #map11{
+<<<<<<< HEAD
 	position:relative;
+=======
+position:relative;
+	background-color:#468724;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 	margin: 200px 0 100px;
 	height: auto;
 	padding: 0;
@@ -273,15 +347,26 @@ body {
 #map12{
 	max-width: none;
 	display: table;
+<<<<<<< HEAD
 	margin:25% auto 0 auto;
 }
 #map13{
 	display:block;
 	color: #FF6347;
+=======
+	background-color:#red;
+	margin:20% auto 0 auto;
+}
+#map13{
+	display:block;
+	background-color:#458697;
+	color:#792898;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 	text-align:center;
 	font-size:30px;
 	padding-top:0;
 	margin-top:0;
+<<<<<<< HEAD
 	font-family:"Comic Sans MS";
 }
 #map14{
@@ -289,6 +374,8 @@ body {
 	margin-bottom:-400px;
 	display:block;
 	height:10px;
+=======
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 }
 h3{
 	margin:0;
@@ -304,14 +391,23 @@ h3{
 	display:table-cell;
 	vertical-align: middle;
 	width: 60%;
+<<<<<<< HEAD
 
+=======
+	background-color:#467868;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 	}
 #tittlename{
 	font-size:36px;
 	color:#f0f;
+<<<<<<< HEAD
 	font-weight:500;
 	text-align:center;
 	font-family:"Comic Sans MS";
+=======
+	font-weight:500px;
+	text-align:center;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 }
 #menu{
 
@@ -327,20 +423,40 @@ h3{
 }
 #seccen{
 	position:relative;
+<<<<<<< HEAD
+=======
+	background-color:#468724;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 	margin: 200px 0;
 	height: auto;
 	padding: 0;
 	width: 100%;
 	display: block;
 	}
+<<<<<<< HEAD
+=======
+.b-container:hover{
+	background-color:#0a5;
+}
+.b-container a{
+	display:block;
+	text-decoration:none;
+}
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 #topmap{
 	position:fixed;
 	width:100%;
 	top:0;
 	left:0;
+<<<<<<< HEAD
 	height:75px;
 	box-shadow: 0 3px 5px #545678;
 	background-color:#FFA500;
+=======
+	height:50px;
+	box-shadow: 0 3px 5px #545678;
+	background-color:#456825;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 	z-index:+1;
 }
 area{
@@ -349,6 +465,7 @@ area{
 #set{
 	max-width:400px;
 }
+<<<<<<< HEAD
 a#buttop{
 	font-family:"Comic Sans MS";
 	float:right;
@@ -374,6 +491,20 @@ a#buttop:hover{
 a#buttop:active{
 	background: #1E90FF;
 	box-shadow: 0 3px #4169E1 inset;
+=======
+.b-container{
+    float:right;
+	width:200px;
+	height:50px;
+	background-color:#f01;
+	text-align:center;
+	display:inline-block;
+	border-radius:100px;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 15px;
+	margin-right:150px;
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
 }
 .b-popup{
     width:100%;
@@ -388,4 +519,8 @@ a#buttop:active{
     width:100px;
     height: 40px;
     padding:10px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7cf391f8e33f395c0b66129d5a2e863249c3dc0e
