@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Прогноз погоди у Чернівцях</title>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	</head>
+	<body onload="digitalWatch()">
+		<header id="topmap">
+			<div id="leftstart">
+				<a href="../index.html" class="ss"></a>
+			</div>
+			<div>
+				<div class="b-container">
+					<a href="javascript:PopUpShow()" id="buttop">Напишіть нам</a>
+				</div>
+				<div class="b-popup" id="popup1">
+					<div class="b-popup-content">
+						<form method="post" action="#">
+							<fieldset id="set">
+								<div>
+									<a id="fx" href="javascript:PopUpHide()"></a>
+								</div>
+								<input type="text" name="name" required placeholder="Ваше ім'я">
+								<input type="email" name="email" required placeholder="Ваше електронна почта">
+								<p><textarea cols="70" rows="10" required placeholder="Ваш текст..."></textarea></p>
+								<p class="push">
+									<input type="submit" value="Відправити" class="kn">
+								</p>
+							</fieldset>
+							<div id="fon">	
+								<a href="javascript:PopUpHide()"></a>
+							</div>
+						</form> 
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="ramvid">		
+			<article id="sp">
+				<select onchange="document.location=this.options[this.selectedIndex].value" name="Оберіть місто" size="1">
+					<option value="none"  disabled>Місто...</option>
+					<option value="Vinnytsia.html">Вінниця</option>
+					<option value="Lutsk.html">Луцьк</option>
+					<option value="Dnipropetrovsk.html">Дніпропетровськ</option>
+					<option value="Donetsk.html">Донецьк</option>
+					<option value="Zhytomyr.html">Житомир</option>
+					<option value="Uzhhorod.html">Ужгород</option>
+					<option value="Zaporizhia.html">Запоріжжя</option>
+					<option value="Ivano-Frankivsk.html">Івано-Франківськ</option>
+					<option value="Kiev.html">Київ</option>
+					<option value="Kirovohrad.html">Кіровоград</option>
+					<option value="Simferopol.html">Сімферополь</option>
+					<option value="Luhansk.html">Луганськ</option>
+					<option value="Lviv.html">Львів</option>
+					<option value="Mykolaiv.html">Миколаїв</option>
+					<option value="Odessa.html">Одеса</option>
+					<option value="Poltava.html">Полтава</option>
+					<option value="Rivne.html">Рівне</option>
+					<option value="Sumy.html">Суми</option>
+					<option value="Ternopil.html">Тернопіль</option>
+					<option value="Kharkiv.html">Харків</option>
+					<option value="Kherson.html">Херсон</option>
+					<option value="Khmelnytskyi.html">Хмельницький</option>
+					<option value="Cherkasy.html">Черкаси</option>
+					<option value="Chernivtsi.html" selected>Чернівці</option>
+					<option value="Chernihiv.html">Чернігів</option>
+				</select>
+			</article>
+			<div id="cen-pog">
+				<div>
+					<div id="db">
+					<ul id="list">
+						<li class="db1" id="pon">
+							<a rel="nofollow">
+								<div >
+									<h3>
+										<span id="1-1" class="name"></span>
+									</h3>
+								</div>
+								<span id="3-1" class="icon">
+								</span>
+								<span class="icon2">
+									<span class="icon3 2-1"></span>
+									<span class="icon3">°C</span>
+								</span>
+								<span id="5-1" class="clouds"></span>
+								<span id="4-1" class="date"></span>
+							</a>
+						</li>
+						<li class="db1">
+							<a>
+								<div>
+									<h3>
+										<span id="1-2" class="name"></span>
+									</h3>
+								</div>
+								<span id="3-2" class="icon">
+								</span>
+								<span class="icon2">
+									<span class="icon3 2-2"></span>
+									<span class="icon3">°C</span>
+								</span>
+								<span id="5-2" class="clouds"></span>
+								<span id="4-2" class="date"></span>
+							</a>
+						</li>
+						<li class="db1">
+							<a>
+								<div>
+									<h3>
+										<span id="1-3" class="name"> 
+										</span>
+									</h3>
+								</div>
+								<span id="3-3" class="icon">
+								</span>
+								<span class="icon2">
+									<span class="icon3 2-3"></span>
+									<span class="icon3">°C</span>
+								</span>
+								<span id="5-3" class="clouds"></span>
+								<span id="4-3" class="date"></span>
+							</a>
+						</li>
+						<li class="db1">
+							<a>
+								<div>
+									<h3>
+										<span id="1-4" class="name"></span>
+									</h3>
+								</div>
+								<span id="3-4" class="icon">
+								</span>
+								<span class="icon2">
+									<span class="icon3 2-4"></span>
+									<span class="icon3">°C</span>
+								</span>
+								<span id="5-4" class="clouds"></span>
+								<span id="4-4" class="date"></span>
+							</a>
+						</li>
+						<li class="db1">
+							<a>
+								<div>
+									<h3>
+										<span id="1-5" class="name"></span>
+									</h3>
+								</div>
+								<span id="3-5" class="icon">
+								</span>
+								<span class="icon2">
+									<span class="icon3 2-5"></span>
+									<span class="icon3">°C</span>
+								</span>
+								<span id="5-5" class="clouds"></span>
+								<span id="4-5" class="date"></span>
+							</a>
+						</li>
+						<li class="db1">
+							<a>
+								<div>
+									<h3>
+										<span id="1-6" class="name"></span>
+									</h3>
+								</div>
+								<span id="3-6" class="icon">
+								</span>
+								<span class="icon2">
+									<span class="icon3 2-6"></span>
+									<span class="icon3">°C</span>
+								</span>
+								<span id="5-6" class="clouds"></span>
+								<span id="4-6" class="date"></span>
+							</a>
+						</li>
+						<li class="db1" id="nd">
+							<a>
+								<div>
+									<h3>
+										<span id="1-7" class="name"></span>
+									</h3>
+								</div>
+								<span id="3-7" class="icon">
+								</span>
+								<span class="icon2">
+									<span class="icon3 2-7"></span>
+									<span class="icon3">°C</span>
+								</span>
+								<span id="5-7" class="clouds"></span>
+								<span id="4-7" class="date"></span>
+							</a>
+						</li>
+					</ul>	
+					</div>
+				</div>	
+				<div>
+					<div id="time_p">
+						<div id="watch"></div>
+						<p id="digital_watch" ></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
+		<script type="text/javascript" src="../js/City/Chernivtsi.js"></script>
+	</body>
+</html>
