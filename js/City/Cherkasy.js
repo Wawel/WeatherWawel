@@ -6,7 +6,7 @@ function getWeatherData(lang, cityID, fnOK, fnError) {
         var cache = localStorage.weatherCache && JSON.parse(localStorage.weatherCache);
         var currDate = new Date();
         // If the cache is newer than 30 minutes, use the cache
-        if(cache && cache.timestamp && cache.timestamp > currDate.getTime() - 30*60*1000){
+        if(cache && cache.timestamp && cache.timestamp > currDate.getTime() - 30*60*1){
             fnOK.call(this, cache.data);
         } else {
             $.getJSON(
